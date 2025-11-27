@@ -3,5 +3,8 @@ import pytest
 
 
 @pytest.fixture(scope="session", autouse=True)
-def download_models():
-    nltk.download("punkt")
+def ensure_nltk():
+    try:
+        nltk.data.find("tokenizers/punkt_tab")
+    except LookupError:
+        nltk.download("punkt_tab", quiet=True)
