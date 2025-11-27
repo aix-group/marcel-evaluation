@@ -50,8 +50,11 @@ jobs:
         with:
           python-version: 3.11.*
 
-      - name: Install dependencies
-        run: pdm install
+      - name: Install project dependencies
+        run: |
+          pdm venv create --with-pip --force
+          pdm run pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pdm install --no-lock
 
       - name: Run test
         run: pdm run test
