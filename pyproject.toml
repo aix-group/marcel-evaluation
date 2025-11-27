@@ -1,0 +1,55 @@
+[project]
+name = "marcel_evaluation"
+version = "0.1.0"
+description = "Evaluation library for RAG-based chatbots."
+authors = [
+    {name = "Jan Trienes", email = "jan.trienes@uni-marburg.de"},
+]
+dependencies = [
+    "tqdm>=4.66.4",
+    "ir-measures>=0.3.3",
+    "pandas>=2.2.2",
+    "sentence-transformers>=3.0.1",
+    "bert-score>=0.3.13",
+    "sacrebleu>=2.4.2",
+    "rouge-score>=0.1.2",
+    "nltk>=3.8.1",
+    "w3lib>=2.2.1",
+    "wandb>=0.19.8",
+    "openai>=2.6.1",
+]
+requires-python = "==3.11.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+[tool.ruff.lint.isort]
+# See: https://github.com/astral-sh/ruff/issues/10519
+known-third-party = ["wandb"]
+
+[tool.coverage.report]
+exclude_also = [
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+]
+
+[tool.pytest.ini_options]
+asyncio_default_fixture_loop_scope = "function"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.scripts]
+format-code = "ruff format"
+format-imports = "ruff check --select I --fix"
+format = {composite = ["format-imports", "format-code"]}
+lint = "ruff check"
+lint-fix = "ruff check --fix"
+test.cmd = "pytest tests/ --cov-report html --cov=marcel_evaluation --cov-branch"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.1.1",
+    "ruff>=0.6.4",
+    "pytest-cov>=7.0.0",
+    "pytest-asyncio>=1.2.0",
+]

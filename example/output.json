@@ -1,0 +1,152 @@
+[
+    {
+        "id": "0",
+        "question": "What is the highest peak in Jotunheimen National Park?",
+        "generated_answer": [
+            "The highest peak in Jotunheimen National Park is Glittertind. It is 2,465 metres (8,087 ft) tall.",
+            "Glittertind, standing at 2,465 meters (8,087 feet), is the tallest mountain in Jotunheimen National Park.",
+            "At 2,465 meters (8,087 feet), Glittertind is the highest point in Jotunheimen National Park."
+        ],
+        "contexts": [
+            {
+                "content": "More than 250 peaks rise above an elevation of 1,900 metres (6,200 ft), including Northern Europe's two highest peaks: Galdh\u00f8piggen at 2,469 metres (8,100 ft), and Glittertind at 2,465 metres (8,087 ft).",
+                "url": "website1",
+                "score": 7
+            },
+            {
+                "content": "Jotunheimen National Park is part of the larger area Jotunheimen.",
+                "url": "website1",
+                "score": 6
+            }
+        ],
+        "reference_answer": "Galdh\u00f8piggen at 2,469 metres (8,100 ft).",
+        "sources": [
+            "website1"
+        ]
+    },
+    {
+        "id": "1",
+        "question": "Which counties is Jotunheimen National Park located in?",
+        "generated_answer": [
+            "Jotunheimen National Park is located in Oslo and Akershus counties.",
+            "Jotunheimen National Park is located in Innlandet and Vestland counties.",
+            "Jotunheimen National Park is located in countries."
+        ],
+        "contexts": [
+            {
+                "content": "Jotunheimen includes Hurrungane, but Utladalen and its surroundings are within Utladalen Landscape Protection Area.",
+                "url": "website2",
+                "score": 7
+            },
+            {
+                "content": "Geographically, it lies in both Innlandet and Vestland counties.",
+                "url": "website1",
+                "score": 5
+            }
+        ],
+        "reference_answer": "Innlandet and Vestland counties.",
+        "sources": [
+            "website1"
+        ]
+    },
+    {
+        "id": "2",
+        "question": "What wildlife can be found in Jotunheimen National Park?",
+        "generated_answer": [
+            "Wildlife in Jotunheimen National Park includes lynx, wolves, brown bears, and musk oxen.",
+            "Jotunheimen National Park is home to animals such as lynx, wolves, brown bears, and musk oxen.",
+            "Lynx, wolves, brown bears, and musk oxen are among the wildlife found in Jotunheimen National Park."
+        ],
+        "contexts": [
+            {
+                "content": "Wildlife in the park include the lynx, moose, Norwegian red deer, reindeer, roe deer, and wolverine.",
+                "url": "website1",
+                "score": 7
+            },
+            {
+                "content": "Most lakes and rivers hold trout.",
+                "url": "website2",
+                "score": 3
+            }
+        ],
+        "reference_answer": "Lynx, moose, Norwegian red deer, reindeer, roe deer, and wolverine.",
+        "sources": [
+            "website1"
+        ]
+    },
+    {
+        "id": "3",
+        "question": "What archaeological discovery was made in Jotunheimen in 2020?",
+        "generated_answer": [
+            "In 2020 a significant discovery was made in Jotunheimen by researchers. They found a 1,500-year-old Viking arrowhead, which was made of iron and locked away in a glacier.",
+            "Researchers discovered a 1,500-year-old iron Viking arrowhead in a glacier in Jotunheimen in 2020.",
+            "A remarkable find in 2020 in Jotunheimen was an ancient Viking arrowhead, 1,500 years old, preserved in ice."
+        ],
+        "contexts": [
+            {
+                "content": "The arrowhead made of iron was revealed with its cracked wooden shaft and a feather, is 17 cm long and weighs just 28 grams.",
+                "url": "website2",
+                "score": 6
+            },
+            {
+                "content": "In February 2020, Secrets of the Ice Program researchers discovered a 1,500-year-old Viking arrowhead dating back to the Germanic Iron Age and locked in a glacier in southern Norway caused by the climate change in the Jotunheimen Mountains.",
+                "url": "website1",
+                "score": 4
+            }
+        ],
+        "reference_answer": "A 1,500-year-old Viking arrowhead was discovered in Jotunheimen.",
+        "sources": [
+            "website1"
+        ]
+    },
+    {
+        "id": "4",
+        "question": "What did the Royal Road decree of the 15th century require?",
+        "generated_answer": [
+            "The Royal Road decree of the 15th century required the residents of Lom to keep the mountain crossing passable to the middle of the Sognefjell.",
+            "In the 15th century, a Royal Road decree mandated that people in Lom maintain access across the mountains to central Sognefjell.",
+            "According to a 15th-century Royal Road decree, Lom residents had to ensure the mountain pass to the Sognefjell remained open."
+        ],
+        "contexts": [
+            {
+                "content": "A 'Royal Road' decree from the 15th century required that the residents of Lom must keep the mountain crossing passable to the middle of the Sognefjell, allowing traders to pass.",
+                "url": "website1",
+                "score": 8
+            },
+            {
+                "content": "Caravans carried farm products down the mountains and returned with salt, iron, cloth and lutefisk.",
+                "url": "website1",
+                "score": 5
+            }
+        ],
+        "reference_answer": "The residents of Lom must keep the mountain crossing passable to the middle of the Sognefjell. This is so that traders coming from the north can reach their trading town Bergen.",
+        "sources": [
+            "website1"
+        ]
+    },
+    {
+        "id": "5",
+        "question": "How many tourists hike Besseggen each year?",
+        "generated_answer": [
+            "I'm sorry but I do not have any information about how many tourists come to Jotunheimen to hike the Besseggen ridge.",
+            "Unfortunately, I don't have data on the number of hikers who visit Jotunheimen for the Besseggen ridge.",
+            "I\u2019m sorry, but there are no available figures on how many tourists hike the Besseggen ridge in Jotunheimen."
+        ],
+        "contexts": [
+            {
+                "content": "More than 250 peaks rise above an elevation of 1,900 metres (6,200 ft), including Northern Europe's two highest peaks: Galdh\u00f8piggen at 2,469 metres (8,100 ft), and Glittertind at 2,465 metres (8,087 ft).",
+                "url": "website1",
+                "score": 7
+            },
+            {
+                "content": "Jotunheimen National Park is part of the larger area Jotunheimen.",
+                "url": "website1",
+                "score": 6
+            }
+        ],
+        "reference_answer": "An estimated 60,000 people walk the Besseggen ridge every year.",
+        "sources": [
+            "website1"
+        ]
+    }
+]

@@ -1,0 +1,698 @@
+[
+    {
+        "id": "0",
+        "question": "What is the highest peak in Jotunheimen National Park?",
+        "generated_answer": [
+            "The highest peak in Jotunheimen National Park is Glittertind. It is 2,465 metres (8,087 ft) tall.",
+            "Glittertind, standing at 2,465 meters (8,087 feet), is the tallest mountain in Jotunheimen National Park.",
+            "At 2,465 meters (8,087 feet), Glittertind is the highest point in Jotunheimen National Park."
+        ],
+        "contexts": [
+            {
+                "content": "More than 250 peaks rise above an elevation of 1,900 metres (6,200 ft), including Northern Europe's two highest peaks: Galdh\u00f8piggen at 2,469 metres (8,100 ft), and Glittertind at 2,465 metres (8,087 ft).",
+                "url": "website1",
+                "score": 7
+            },
+            {
+                "content": "Jotunheimen National Park is part of the larger area Jotunheimen.",
+                "url": "website1",
+                "score": 6
+            }
+        ],
+        "reference_answer": "Galdh\u00f8piggen at 2,469 metres (8,100 ft).",
+        "sources": [
+            "website1"
+        ],
+        "GeneratedAnswerLength": {
+            "score": 19.3333333333,
+            "raw": [
+                20,
+                20,
+                18
+            ]
+        },
+        "ReferenceAnswerLength": 9,
+        "ContextLength": 54,
+        "MeanReciprocalRank": 1.0,
+        "p@1": 1.0,
+        "p@3": 0.3333333333,
+        "p@5": 0.2,
+        "p@10": 0.1,
+        "p@20": 0.05,
+        "p@30": 0.0333333333,
+        "p@50": 0.02,
+        "r@1": 1.0,
+        "r@3": 1.0,
+        "r@5": 1.0,
+        "r@10": 1.0,
+        "r@20": 1.0,
+        "r@30": 1.0,
+        "r@50": 1.0,
+        "rouge1": {
+            "score": 0.255688509,
+            "raw": [
+                0.2962962963,
+                0.2307692308,
+                0.24
+            ]
+        },
+        "rouge2": {
+            "score": 0.0834299517,
+            "raw": [
+                0.08,
+                0.0833333333,
+                0.0869565217
+            ]
+        },
+        "rougeLsum": {
+            "score": 0.255688509,
+            "raw": [
+                0.2962962963,
+                0.2307692308,
+                0.24
+            ]
+        },
+        "BERTScore": {
+            "score": 0.2392966648,
+            "raw": [
+                0.2359023094,
+                0.2479355931,
+                0.2340520918
+            ]
+        },
+        "AnswerSimilarity": {
+            "score": 0.5246662498,
+            "raw": [
+                0.5121239424,
+                0.5181100368,
+                0.54376477
+            ]
+        },
+        "AnswerFaithfulness": {
+            "score": 0.6666666667,
+            "raw": [
+                0.6666666667,
+                0.6666666667,
+                0.6666666667
+            ]
+        },
+        "ContextPrecision": 0.9999999999,
+        "ContextRecall": 1.0,
+        "AnswerRelevance": {
+            "score": 0.811986963,
+            "raw": [
+                0.9583755732,
+                0.6855665445,
+                0.7920187712
+            ]
+        },
+        "NonAnswerCritic": {
+            "score": 0.0,
+            "raw": [
+                0,
+                0,
+                0
+            ]
+        }
+    },
+    {
+        "id": "1",
+        "question": "Which counties is Jotunheimen National Park located in?",
+        "generated_answer": [
+            "Jotunheimen National Park is located in Oslo and Akershus counties.",
+            "Jotunheimen National Park is located in Innlandet and Vestland counties.",
+            "Jotunheimen National Park is located in countries."
+        ],
+        "contexts": [
+            {
+                "content": "Jotunheimen includes Hurrungane, but Utladalen and its surroundings are within Utladalen Landscape Protection Area.",
+                "url": "website2",
+                "score": 7
+            },
+            {
+                "content": "Geographically, it lies in both Innlandet and Vestland counties.",
+                "url": "website1",
+                "score": 5
+            }
+        ],
+        "reference_answer": "Innlandet and Vestland counties.",
+        "sources": [
+            "website1"
+        ],
+        "GeneratedAnswerLength": {
+            "score": 10.0,
+            "raw": [
+                11,
+                11,
+                8
+            ]
+        },
+        "ReferenceAnswerLength": 5,
+        "ContextLength": 27,
+        "MeanReciprocalRank": 0.5,
+        "p@1": 0.0,
+        "p@3": 0.3333333333,
+        "p@5": 0.2,
+        "p@10": 0.1,
+        "p@20": 0.05,
+        "p@30": 0.0333333333,
+        "p@50": 0.02,
+        "r@1": 0.0,
+        "r@3": 1.0,
+        "r@5": 1.0,
+        "r@10": 1.0,
+        "r@20": 1.0,
+        "r@30": 1.0,
+        "r@50": 1.0,
+        "rouge1": {
+            "score": 0.2857142857,
+            "raw": [
+                0.2857142857,
+                0.5714285714,
+                0.0
+            ]
+        },
+        "rouge2": {
+            "score": 0.1666666667,
+            "raw": [
+                0.0,
+                0.5,
+                0.0
+            ]
+        },
+        "rougeLsum": {
+            "score": 0.2857142857,
+            "raw": [
+                0.2857142857,
+                0.5714285714,
+                0.0
+            ]
+        },
+        "BERTScore": {
+            "score": -0.0526622236,
+            "raw": [
+                -0.1654860526,
+                0.2086844593,
+                -0.2011850774
+            ]
+        },
+        "AnswerSimilarity": {
+            "score": 0.3984769086,
+            "raw": [
+                0.3848443627,
+                0.5617600679,
+                0.2488262951
+            ]
+        },
+        "AnswerFaithfulness": {
+            "score": 0.6666666667,
+            "raw": [
+                0.0,
+                1.0,
+                1.0
+            ]
+        },
+        "ContextPrecision": 0.5,
+        "ContextRecall": 1.0,
+        "AnswerRelevance": {
+            "score": 0.9646426439,
+            "raw": [
+                0.9809564352,
+                0.9851819873,
+                0.9277895093
+            ]
+        },
+        "NonAnswerCritic": {
+            "score": 0.0,
+            "raw": [
+                0,
+                0,
+                0
+            ]
+        }
+    },
+    {
+        "id": "2",
+        "question": "What wildlife can be found in Jotunheimen National Park?",
+        "generated_answer": [
+            "Wildlife in Jotunheimen National Park includes lynx, wolves, brown bears, and musk oxen.",
+            "Jotunheimen National Park is home to animals such as lynx, wolves, brown bears, and musk oxen.",
+            "Lynx, wolves, brown bears, and musk oxen are among the wildlife found in Jotunheimen National Park."
+        ],
+        "contexts": [
+            {
+                "content": "Wildlife in the park include the lynx, moose, Norwegian red deer, reindeer, roe deer, and wolverine.",
+                "url": "website1",
+                "score": 7
+            },
+            {
+                "content": "Most lakes and rivers hold trout.",
+                "url": "website2",
+                "score": 3
+            }
+        ],
+        "reference_answer": "Lynx, moose, Norwegian red deer, reindeer, roe deer, and wolverine.",
+        "sources": [
+            "website1"
+        ],
+        "GeneratedAnswerLength": {
+            "score": 19.0,
+            "raw": [
+                17,
+                20,
+                20
+            ]
+        },
+        "ReferenceAnswerLength": 16,
+        "ContextLength": 29,
+        "MeanReciprocalRank": 1.0,
+        "p@1": 1.0,
+        "p@3": 0.3333333333,
+        "p@5": 0.2,
+        "p@10": 0.1,
+        "p@20": 0.05,
+        "p@30": 0.0333333333,
+        "p@50": 0.02,
+        "r@1": 1.0,
+        "r@3": 1.0,
+        "r@5": 1.0,
+        "r@10": 1.0,
+        "r@20": 1.0,
+        "r@30": 1.0,
+        "r@50": 1.0,
+        "rouge1": {
+            "score": 0.1605351171,
+            "raw": [
+                0.1739130435,
+                0.1538461538,
+                0.1538461538
+            ]
+        },
+        "rouge2": {
+            "score": 0.0,
+            "raw": [
+                0.0,
+                0.0,
+                0.0
+            ]
+        },
+        "rougeLsum": {
+            "score": 0.1605351171,
+            "raw": [
+                0.1739130435,
+                0.1538461538,
+                0.1538461538
+            ]
+        },
+        "BERTScore": {
+            "score": 0.1809010953,
+            "raw": [
+                0.1698313504,
+                0.1260932982,
+                0.2467786372
+            ]
+        },
+        "AnswerSimilarity": {
+            "score": 0.548723797,
+            "raw": [
+                0.5518264771,
+                0.5225621462,
+                0.5717827678
+            ]
+        },
+        "AnswerFaithfulness": {
+            "score": 0.25,
+            "raw": [
+                0.25,
+                0.25,
+                0.25
+            ]
+        },
+        "ContextPrecision": 0.9999999999,
+        "ContextRecall": 1.0,
+        "AnswerRelevance": {
+            "score": 0.9798237681,
+            "raw": [
+                0.9911653399,
+                0.9774052501,
+                0.9709007144
+            ]
+        },
+        "NonAnswerCritic": {
+            "score": 0.0,
+            "raw": [
+                0,
+                0,
+                0
+            ]
+        }
+    },
+    {
+        "id": "3",
+        "question": "What archaeological discovery was made in Jotunheimen in 2020?",
+        "generated_answer": [
+            "In 2020 a significant discovery was made in Jotunheimen by researchers. They found a 1,500-year-old Viking arrowhead, which was made of iron and locked away in a glacier.",
+            "Researchers discovered a 1,500-year-old iron Viking arrowhead in a glacier in Jotunheimen in 2020.",
+            "A remarkable find in 2020 in Jotunheimen was an ancient Viking arrowhead, 1,500 years old, preserved in ice."
+        ],
+        "contexts": [
+            {
+                "content": "The arrowhead made of iron was revealed with its cracked wooden shaft and a feather, is 17 cm long and weighs just 28 grams.",
+                "url": "website2",
+                "score": 6
+            },
+            {
+                "content": "In February 2020, Secrets of the Ice Program researchers discovered a 1,500-year-old Viking arrowhead dating back to the Germanic Iron Age and locked in a glacier in southern Norway caused by the climate change in the Jotunheimen Mountains.",
+                "url": "website1",
+                "score": 4
+            }
+        ],
+        "reference_answer": "A 1,500-year-old Viking arrowhead was discovered in Jotunheimen.",
+        "sources": [
+            "website1"
+        ],
+        "GeneratedAnswerLength": {
+            "score": 22.3333333333,
+            "raw": [
+                31,
+                15,
+                21
+            ]
+        },
+        "ReferenceAnswerLength": 9,
+        "ContextLength": 66,
+        "MeanReciprocalRank": 0.5,
+        "p@1": 0.0,
+        "p@3": 0.3333333333,
+        "p@5": 0.2,
+        "p@10": 0.1,
+        "p@20": 0.05,
+        "p@30": 0.0333333333,
+        "p@50": 0.02,
+        "r@1": 0.0,
+        "r@3": 1.0,
+        "r@5": 1.0,
+        "r@10": 1.0,
+        "r@20": 1.0,
+        "r@30": 1.0,
+        "r@50": 1.0,
+        "rouge1": {
+            "score": 0.5968253968,
+            "raw": [
+                0.4761904762,
+                0.7142857143,
+                0.6
+            ]
+        },
+        "rouge2": {
+            "score": 0.3419413919,
+            "raw": [
+                0.35,
+                0.4615384615,
+                0.2142857143
+            ]
+        },
+        "rougeLsum": {
+            "score": 0.4682539683,
+            "raw": [
+                0.4285714286,
+                0.6428571429,
+                0.3333333333
+            ]
+        },
+        "BERTScore": {
+            "score": 0.7021521529,
+            "raw": [
+                0.6583860517,
+                0.7687336802,
+                0.6793367267
+            ]
+        },
+        "AnswerSimilarity": {
+            "score": 0.8571863174,
+            "raw": [
+                0.8056161404,
+                0.8775073886,
+                0.8884354234
+            ]
+        },
+        "AnswerFaithfulness": {
+            "score": 0.9166666667,
+            "raw": [
+                1.0,
+                1.0,
+                0.75
+            ]
+        },
+        "ContextPrecision": 1.0,
+        "ContextRecall": 1.0,
+        "AnswerRelevance": {
+            "score": 0.7949124177,
+            "raw": [
+                0.8102412224,
+                0.7536898851,
+                0.8208061457
+            ]
+        },
+        "NonAnswerCritic": {
+            "score": 0.0,
+            "raw": [
+                0,
+                0,
+                0
+            ]
+        }
+    },
+    {
+        "id": "4",
+        "question": "What did the Royal Road decree of the 15th century require?",
+        "generated_answer": [
+            "The Royal Road decree of the 15th century required the residents of Lom to keep the mountain crossing passable to the middle of the Sognefjell.",
+            "In the 15th century, a Royal Road decree mandated that people in Lom maintain access across the mountains to central Sognefjell.",
+            "According to a 15th-century Royal Road decree, Lom residents had to ensure the mountain pass to the Sognefjell remained open."
+        ],
+        "contexts": [
+            {
+                "content": "A 'Royal Road' decree from the 15th century required that the residents of Lom must keep the mountain crossing passable to the middle of the Sognefjell, allowing traders to pass.",
+                "url": "website1",
+                "score": 8
+            },
+            {
+                "content": "Caravans carried farm products down the mountains and returned with salt, iron, cloth and lutefisk.",
+                "url": "website1",
+                "score": 5
+            }
+        ],
+        "reference_answer": "The residents of Lom must keep the mountain crossing passable to the middle of the Sognefjell. This is so that traders coming from the north can reach their trading town Bergen.",
+        "sources": [
+            "website1"
+        ],
+        "GeneratedAnswerLength": {
+            "score": 23.6666666667,
+            "raw": [
+                26,
+                23,
+                22
+            ]
+        },
+        "ReferenceAnswerLength": 33,
+        "ContextLength": 51,
+        "MeanReciprocalRank": 1.0,
+        "p@1": 1.0,
+        "p@3": 0.3333333333,
+        "p@5": 0.2,
+        "p@10": 0.1,
+        "p@20": 0.05,
+        "p@30": 0.0333333333,
+        "p@50": 0.02,
+        "r@1": 1.0,
+        "r@3": 1.0,
+        "r@5": 1.0,
+        "r@10": 1.0,
+        "r@20": 1.0,
+        "r@30": 1.0,
+        "r@50": 1.0,
+        "rouge1": {
+            "score": 0.3571428571,
+            "raw": [
+                0.5714285714,
+                0.2307692308,
+                0.2692307692
+            ]
+        },
+        "rouge2": {
+            "score": 0.2004938272,
+            "raw": [
+                0.4814814815,
+                0.0,
+                0.12
+            ]
+        },
+        "rougeLsum": {
+            "score": 0.3195970696,
+            "raw": [
+                0.5357142857,
+                0.1923076923,
+                0.2307692308
+            ]
+        },
+        "BERTScore": {
+            "score": 0.4656486313,
+            "raw": [
+                0.5799865723,
+                0.4005704224,
+                0.4163888991
+            ]
+        },
+        "AnswerSimilarity": {
+            "score": 0.6529544989,
+            "raw": [
+                0.6890878677,
+                0.6529976726,
+                0.6167779565
+            ]
+        },
+        "AnswerFaithfulness": {
+            "score": 1.0,
+            "raw": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "ContextPrecision": 0.9999999999,
+        "ContextRecall": 0.5,
+        "AnswerRelevance": {
+            "score": 0.7937588493,
+            "raw": [
+                0.8972041011,
+                0.6701036692,
+                0.8139687777
+            ]
+        },
+        "NonAnswerCritic": {
+            "score": 0.0,
+            "raw": [
+                0,
+                0,
+                0
+            ]
+        }
+    },
+    {
+        "id": "5",
+        "question": "How many tourists hike Besseggen each year?",
+        "generated_answer": [
+            "I'm sorry but I do not have any information about how many tourists come to Jotunheimen to hike the Besseggen ridge.",
+            "Unfortunately, I don't have data on the number of hikers who visit Jotunheimen for the Besseggen ridge.",
+            "I\u2019m sorry, but there are no available figures on how many tourists hike the Besseggen ridge in Jotunheimen."
+        ],
+        "contexts": [
+            {
+                "content": "More than 250 peaks rise above an elevation of 1,900 metres (6,200 ft), including Northern Europe's two highest peaks: Galdh\u00f8piggen at 2,469 metres (8,100 ft), and Glittertind at 2,465 metres (8,087 ft).",
+                "url": "website1",
+                "score": 7
+            },
+            {
+                "content": "Jotunheimen National Park is part of the larger area Jotunheimen.",
+                "url": "website1",
+                "score": 6
+            }
+        ],
+        "reference_answer": "An estimated 60,000 people walk the Besseggen ridge every year.",
+        "sources": [
+            "website1"
+        ],
+        "GeneratedAnswerLength": {
+            "score": 21.6666666667,
+            "raw": [
+                23,
+                20,
+                22
+            ]
+        },
+        "ReferenceAnswerLength": 11,
+        "ContextLength": 54,
+        "MeanReciprocalRank": 1.0,
+        "p@1": 1.0,
+        "p@3": 0.3333333333,
+        "p@5": 0.2,
+        "p@10": 0.1,
+        "p@20": 0.05,
+        "p@30": 0.0333333333,
+        "p@50": 0.02,
+        "r@1": 1.0,
+        "r@3": 1.0,
+        "r@5": 1.0,
+        "r@10": 1.0,
+        "r@20": 1.0,
+        "r@30": 1.0,
+        "r@50": 1.0,
+        "rouge1": {
+            "score": 0.1962382445,
+            "raw": [
+                0.1818181818,
+                0.2068965517,
+                0.2
+            ]
+        },
+        "rouge2": {
+            "score": 0.1400125164,
+            "raw": [
+                0.1290322581,
+                0.1481481481,
+                0.1428571429
+            ]
+        },
+        "rougeLsum": {
+            "score": 0.1962382445,
+            "raw": [
+                0.1818181818,
+                0.2068965517,
+                0.2
+            ]
+        },
+        "BERTScore": {
+            "score": 0.3634645243,
+            "raw": [
+                0.3406459093,
+                0.3630360067,
+                0.386711657
+            ]
+        },
+        "AnswerSimilarity": {
+            "score": 0.6128709912,
+            "raw": [
+                0.6365041733,
+                0.5801534653,
+                0.6219553351
+            ]
+        },
+        "AnswerFaithfulness": {
+            "score": 0.3333333333,
+            "raw": [
+                0.0,
+                1.0,
+                0.0
+            ]
+        },
+        "ContextPrecision": 0.0,
+        "ContextRecall": 0.0,
+        "AnswerRelevance": {
+            "score": null,
+            "raw": [
+                null,
+                null,
+                null
+            ]
+        },
+        "NonAnswerCritic": {
+            "score": 1.0,
+            "raw": [
+                1,
+                1,
+                1
+            ]
+        }
+    }
+]
