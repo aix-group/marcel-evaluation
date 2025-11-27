@@ -42,16 +42,22 @@ jobs:
   test:
     name: test
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.11', '3.12', '3.13', '3.14']
+
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@08eba0b27e820071cde6df949e0beb9ba4906955 # v4
 
       - uses: pdm-project/setup-pdm@94a823180e06fcde4ad29308721954a521c96ed0 # v4
         with:
-          python-version: 3.11.*
+          python-version: ${{ matrix.python-version }}
 
       - name: Install project dependencies
-        run: pdm install --frozen-lockfile
+        run: |
+          pdm lock --python="==${{ matrix.python-version }}.*"
+          pdm install
 
       - name: Run test
         run: pdm run test
