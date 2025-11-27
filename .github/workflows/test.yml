@@ -1,0 +1,57 @@
+name: test
+on:
+  pull_request:
+    branches:
+      - '*'
+  push:
+    branches:
+      - main
+
+
+# Cancel a currently running workflow from the same PR, branch or tag when a new workflow is triggered
+# https://stackoverflow.com/a/72408109
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint:
+    name: lint
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@08eba0b27e820071cde6df949e0beb9ba4906955 # v4
+
+      - uses: pdm-project/setup-pdm@94a823180e06fcde4ad29308721954a521c96ed0 # v4
+        with:
+          python-version: 3.11.*
+
+      - name: Install dependencies (development only)
+        run: |
+          pdm install -d --without default
+
+      - name: Check format
+        run: pdm run ruff format --diff
+
+      - name: Check imports
+        run: pdm run ruff check --select I
+
+      - name: Run lint
+        run: pdm run ruff check
+
+  test:
+    name: test
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@08eba0b27e820071cde6df949e0beb9ba4906955 # v4
+
+      - uses: pdm-project/setup-pdm@94a823180e06fcde4ad29308721954a521c96ed0 # v4
+        with:
+          python-version: 3.11.*
+
+      - name: Install dependencies
+        run: pdm install
+
+      - name: Run test
+        run: pdm run test
