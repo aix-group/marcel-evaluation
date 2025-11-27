@@ -38,6 +38,11 @@ asyncio_default_fixture_loop_scope = "function"
 [tool.pdm]
 distribution = true
 
+[[tool.pdm.source]]
+type = "index"
+url = "https://download.pytorch.org/whl/cpu/"
+name = "torch"
+
 [tool.pdm.scripts]
 format-code = "ruff format"
 format-imports = "ruff check --select I --fix"
