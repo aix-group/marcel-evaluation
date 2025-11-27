@@ -50,8 +50,8 @@ jobs:
         with:
           python-version: 3.11.*
 
-      - name: Install dependencies
-        run: pdm install
+      - name: Install project dependencies
+        run: pdm install --frozen-lockfile
 
       - name: Run test
         run: pdm run test
