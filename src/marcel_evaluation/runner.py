@@ -193,14 +193,14 @@ async def main(args):
 
     # calculate metrics
     for i, metric in enumerate(selected_metrics):
-        print(f"({i+1}/{len(selected_metrics)}) Calculate {metric.name}")
+        print(f"({i + 1}/{len(selected_metrics)}) Calculate {metric.name}")
         try:
             metric_data = metric.compute(responses)
         except NotImplementedError:
             metric_data = await metric.compute_async(responses)
         results[metric.name] = metric_data
 
-        print(f"({i+1}/{len(selected_metrics)}) Save {metric.name}")
+        print(f"({i + 1}/{len(selected_metrics)}) Save {metric.name}")
         wandb_run.log({metric.name: metric_data["score"]})
 
         # report dataset-level scores
