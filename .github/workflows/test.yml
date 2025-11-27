@@ -55,7 +55,9 @@ jobs:
           python-version: ${{ matrix.python-version }}
 
       - name: Install project dependencies
-        run: pdm install --frozen-lockfile --python="==${{ matrix.python-version }}"
+        run: |
+          pdm lock --python="==${{ matrix.python-version }}"
+          pdm install
 
       - name: Run test
         run: pdm run test
