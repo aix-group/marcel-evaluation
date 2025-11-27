@@ -56,7 +56,7 @@ jobs:
 
       - name: Install project dependencies
         run: |
-          pdm lock --python="==${{ matrix.python-version }}"
+          pdm lock --python="==${{ matrix.python-version }}.*"
           pdm install
 
       - name: Run test
