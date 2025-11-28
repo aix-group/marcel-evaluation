@@ -60,4 +60,7 @@ jobs:
           pdm install
 
       - name: Run test
+        env:
+          OPENAI_BASE_URL: ${{ vars.OPENAI_BASE_URL }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: pdm run test
