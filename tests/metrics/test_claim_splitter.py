@@ -3,12 +3,6 @@ import pytest
 from marcel_evaluation.metrics import claim_splitter
 from marcel_evaluation.metrics.claim_splitter import ClaimSplitter, Output
 
-# split answer into sentences
-# split each sentence into claims
-# gather all claims per answer
-# perform nli: context + claims --> result list of labels for each claim
-# calculate % of supported claims per answer
-
 
 def test_sentence_split():
     splitter = ClaimSplitter(model="")
