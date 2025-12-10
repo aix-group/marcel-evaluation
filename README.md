@@ -1,4 +1,6 @@
-# evaluation
+# RAG Evaluation
+
+A library to evaluate RAG systems including IR metrics (e.g., MRR, r@k, p@k), classic NLG metrics (ROUGE, BLEU, BERTScore) and LLM-as-a-judge inspired by [`ragas`](https://github.com/explodinggradients/ragas).
 
 ## Prepare system outputs
 
@@ -165,3 +167,7 @@ Please find a description of all metrics below, including what parts of the resp
 | Answer Faithfulness | To what extent is the generated answer supported by the retrieved context? Splits the answer into atomic claims and then checks whether each claim is supported by the context. The score is given as the fraction of $\text{supported}/\text{total}$ claims.                                                                     | ✔️  | ✔️  |           | ✔️  |           |
 | Answer relevance    | How relevant is the answer to the question? Generates N hypothetical questions based on the generated answer. Then calculates average cosine similarity of the generated questions vs. the actual question. Intuition: if we can reverse engineer the original question from the answer, we assume the answer is highly relevant. | ✔️  | ✔️  |           | ✔️  |           |
 | Non-answer critic   | Check if generated_answer is a non-answer (e.g., "i don't know", "i don't have enough information").                                                                                                                                                                                                                              |     | ✔️  |           |     |           |
+
+## Credits
+
+This code is heavily inspired by [`ragas`](github.com/explodinggradients/ragas). Key differences: (1) we include other classical NLG/IR metrics (e.g., MRR or BERTScore); (2) all LLM-as-a-judge metrics use strictly json-guided decoding to improve reliability of metrics; (3) Some prompts were adjusted to support academic information seeking setting.
