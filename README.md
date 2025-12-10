@@ -1,6 +1,6 @@
 # RAG Evaluation
 
-A library to evaluate RAG systems including IR metrics (e.g., MRR, r@k, p@k), classic NLG metrics (ROUGE, BLEU, BERTScore) and LLM-as-a-judge inspired by [`ragas`](https://github.com/explodinggradients/ragas).
+A library to evaluate RAG systems including IR metrics (e.g., MRR, r@k, p@k), classic NLG metrics (ROUGE, BLEU, BERTScore) and LLM-as-a-judge inspired by [`ragas`](https://github.com/explodinggradients/ragas). See [below](#metrics) for a list of all metrics.
 
 ## Prepare system outputs
 
@@ -114,18 +114,6 @@ pdm run python -m marcel_evaluation.runner \
     --model neuralmagic/Meta-Llama-3.1-70B-Instruct-quantized.w8a8 \
     --metrics ContextLength,MeanReciprocalRank,ContextPrecision,ContextRecall \
     --force
-
-# For for slurm-based execution:
-sbatch scripts/evaluate.sh \
-    --run_path ...
-```
-
-## Batch evaluation of multiple runs
-
-Each run will be evaluated by a separate Slurm job. Use the script below to generate a list of tasks, then follow the printed instruction to start the job array.
-
-```sh
-./scripts/evaluate_task_list.sh
 ```
 
 ## Metrics
@@ -171,3 +159,32 @@ Please find a description of all metrics below, including what parts of the resp
 ## Credits
 
 This code is heavily inspired by [`ragas`](github.com/explodinggradients/ragas). Key differences: (1) we include other classical NLG/IR metrics (e.g., MRR or BERTScore); (2) all LLM-as-a-judge metrics use strictly json-guided decoding to improve reliability of metrics; (3) Some prompts were adjusted to support academic information seeking setting.
+
+## Citation
+
+If you found any of these resources useful in your work, please consider citing our paper:
+
+```bibtex
+@inproceedings{trienes-etal-2025-marcel,
+    title = "Marcel: A Lightweight and Open-Source Conversational Agent for University Student Support",
+    author = {Trienes, Jan  and
+      Derzhanskaia, Anastasiia  and
+      Schwarzkopf, Roland  and
+      M{\"u}hling, Markus  and
+      Schl{\"o}tterer, J{\"o}rg  and
+      Seifert, Christin},
+    editor = {Habernal, Ivan  and
+      Schulam, Peter  and
+      Tiedemann, J{\"o}rg},
+    booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing: System Demonstrations",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.emnlp-demos.13/",
+    doi = "10.18653/v1/2025.emnlp-demos.13",
+    pages = "181--195",
+    ISBN = "979-8-89176-334-0",
+    abstract = "We present Marcel, a lightweight and open-source conversational agent designed to support prospective students with admission-related inquiries. The system aims to provide fast and personalized responses, while reducing workload of university staff. We employ retrieval-augmented generation to ground answers in university resources and to provide users with verifiable, contextually relevant information. We introduce a Frequently Asked Question (FAQ) retriever that maps user questions to knowledge-base entries, which allows administrators to steer retrieval, and improves over standard dense/hybrid retrieval strategies. The system is engineered for easy deployment in resource-constrained academic settings. We detail the system architecture, provide a technical evaluation of its components, and report insights from a real-world deployment."
+}
+```
