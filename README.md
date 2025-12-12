@@ -2,7 +2,15 @@
 
 A library to evaluate RAG systems including IR metrics (e.g., MRR, r@k, p@k), classic NLG metrics (ROUGE, BLEU, BERTScore) and LLM-as-a-judge inspired by [`ragas`](https://github.com/explodinggradients/ragas). See [below](#metrics) for a list of all metrics.
 
-## Prepare system outputs
+## Installation
+
+We support Python >= 3.11. Currently the package is available for direct install from GitHub:
+
+```sh
+pip install git+https://github.com/aix-group/marcel-evaluation
+```
+
+## Preparing Data
 
 We expect that system outputs are formatted as a list of JSON objects as in the example below. `contexts` are the results of your retrieval system, sorted in descending order of relevance. The `contexts.url` and `sources` fields are used to calculate IR metrics such as Mean Reciprocal Rank (MRR). If your system generates multiple candidate answers, pass a list in `generated_answer`. The sample-level score will be determined by the average of per-answer scores.
 
